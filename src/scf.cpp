@@ -216,35 +216,38 @@ SCF::~SCF()
 
 
 
-
-
-
-
 int main()
 {
     const std::string filename1 = "../../example/H2O.in";
     const std::string filename2 = "../../example/N2.in";
     const std::string filename3 = "../../example/BZ.in";
+    const std::string filename4 = "../../example/H2O-2.in";
     //const std::string filename = "test1.in";
-
-    MOLECULE mol1(filename1);
-    MOLECULE mol2(filename2);
-    MOLECULE mol3(filename3);
-
     std::cout << std::endl;
     std::cout << "test1*********************************************" << std::endl;
+     MOLECULE mol1(filename1);
     mol1.read();
     mol1.bulid();
     SCF hf1(mol1);
     std::cout << std::endl;
     std::cout << "test2*********************************************" << std::endl;
+    MOLECULE mol2(filename2);
     mol2.read();
     mol2.bulid();
     SCF hf2(mol2);
     std::cout << std::endl;
     std::cout << "test3*********************************************" << std::endl;
+    MOLECULE mol3(filename3);
     mol3.read();
     mol3.bulid();
     SCF hf3(mol3);
+/*
+    std::cout << std::endl;
+    std::cout << "test4*********************************************" << std::endl;
+    MOLECULE mol4(filename4);
+    mol4.read();
+    mol4.bulid();
+    SCF hf4(mol4);
+*/
     return 0;
 }

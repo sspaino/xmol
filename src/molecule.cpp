@@ -282,7 +282,7 @@ void MOLECULE::read()
     _atm = new int[_natm * ATM_SLOTS]();
     _bas = new int[_nshell * BAS_SLOTS]();
     _env = new double[MAX_ENV]();
-    _shell_label = new int[_nshell];
+    _shell_label = new int[_nshell]();
 
     /*
 
@@ -362,6 +362,43 @@ void MOLECULE::read()
         shl_off += _atoms[iatm]->ctrgs.size();
     }
     normalize();
+
+/*
+
+    printf("_natm\n");
+    for (int i = 0; i < _natm * ATM_SLOTS; i++)
+    {
+        printf("%8d",_atm[i]);
+        if ((i+1)%ATM_SLOTS==0)
+        {
+            printf("\n");
+        }
+    }
+    printf("\n");
+
+    printf("_bas\n");
+    for (int i = 0; i < _nshell * BAS_SLOTS; i++)
+    {
+        printf("%8d",_bas[i]);
+        if ((i+1)%BAS_SLOTS==0)
+        {
+            printf("\n");
+        }
+    }
+    printf("\n");
+
+    printf("_env\n");
+    for (int i = 0; i < 200; i++)
+    {
+        printf("%10.3lf",_env[i]);
+        if ((i+1)%4==0)
+        {
+            printf("\n");
+        }
+
+    }
+    printf("\n");
+*/
 
 
     // calculate occ;
