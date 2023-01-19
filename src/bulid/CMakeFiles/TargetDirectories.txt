@@ -1,3 +1,0 @@
-/home4/shiweil/code/xmol/src/bulid/CMakeFiles/xmol.dir
-/home4/shiweil/code/xmol/src/bulid/CMakeFiles/edit_cache.dir
-/home4/shiweil/code/xmol/src/bulid/CMakeFiles/rebuild_cache.dir

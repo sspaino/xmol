@@ -1,1 +1,0 @@
-/home4/shiweil/software/gcc-12/bin/g++ -std=c++17  CMakeFiles/xmol.dir/molecule.cpp.o CMakeFiles/xmol.dir/chemutils.cpp.o CMakeFiles/xmol.dir/scf.cpp.o CMakeFiles/xmol.dir/utils.cpp.o -o xmol   -L/home4/shiweil/clib/libcint/lib64  -Wl,-rpath,/home4/shiweil/clib/libcint/lib64 -lm -lcint -llapacke -llapack -lcblas -lrefblas -lm -lgfortran 
